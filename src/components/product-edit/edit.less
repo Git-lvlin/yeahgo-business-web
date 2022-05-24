@@ -1,0 +1,39 @@
+.drawer_form {
+  :global {
+    .ant-input-group-addon {
+      border: none;
+    }
+
+
+  }
+}
+
+:global {
+  .rs-picker-menu {
+    z-index: 9999 !important;
+  }
+}
+
+.video_preview {
+  position: relative;
+  width: 100px;
+  height: 100px;
+
+  &:hover {
+    &>div {
+      display: flex;
+    }
+  }
+
+  >div {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+  }
+}

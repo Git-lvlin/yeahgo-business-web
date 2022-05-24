@@ -1,0 +1,56 @@
+.header {
+  .card {
+    :global {
+      .ant-pro-card-body {
+        padding: 5px 0;
+        text-align: center;
+        background: #f9fafb;
+      }
+    }
+  }
+}
+
+.normal {
+  position: relative;
+
+  :global {
+    .ant-pro-card-body-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ant-form-item-control {
+      max-width: 100%;
+      flex: 1;
+    }
+
+    .ant-pro-form-list>div {
+      width: 100% !important;
+    }
+
+    .ant-pro-form-list-container {
+      width: 100% !important;
+      margin-right: 0 !important;
+    }
+
+    // .ant-pro-form-list-item {
+    //   border-bottom: 1px solid #f0f0f0;
+    // }
+
+    .ant-pro-card-body>.ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .card {
+    :global {
+      .ant-pro-card-body {
+        padding: 15px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}

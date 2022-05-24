@@ -1,0 +1,84 @@
+.marginTop {
+  margin-top: 40px;
+}
+
+.dynamicTxt {
+  color: #9D9D9D;
+}
+.goodsName {
+  text-align: left;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+}
+
+.print {
+  padding: 20px 0;
+  -webkit-print-color-adjust: extract;
+  -moz-print-color-adjust: extract;
+  -ms-print-color-adjust: extract;
+}
+
+@media print {
+  @page {
+    size: landscape;
+    margin: 0mm 5mm;
+  }
+  .pagebreak {
+    page-break-inside: avoid;
+  }
+  .goodsName {
+    word-break:break-all;
+    white-space:normal;
+  }
+}
+
+.pagebreak {
+  margin-top: 3rem;
+}
+
+.description {
+  margin-top: 30;
+  background: #fff;
+  padding: 20px;
+}
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  width: 300px;
+}
+.ant-descriptions-bordered .ant-descriptions-item-content {
+  width: 790px;
+}
+
+.tableHead {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  .page {
+    margin-right: 20px;
+  }
+}
+
+.goodsName {
+  width: 150px;
+}
+
+.mark{
+  display: inline-block;
+  width:60px;
+  text-align: center;
+  background-color: #FF6666;
+  border-radius: 5px;
+  font-size: 10px;
+  color: #fff;
+  padding: 2px 0;
+}

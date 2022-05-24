@@ -1,0 +1,56 @@
+.box_wrap {
+  border: 1px solid #000;
+
+  .box_header {
+    padding: 15px;
+    justify-content: center;
+  }
+
+  >.box:not(:nth-last-of-type(1)) {
+    border-bottom: 1px solid #000;
+  }
+
+  >.box {
+    display: flex;
+
+    .box_wrap {
+      border: none;
+      padding: 0;
+      display: block;
+
+      .box {
+        border-right: none;
+        width: 100%;
+      }
+    }
+
+    div:not(:nth-last-of-type(1)) {
+      border-right: 1px solid #000;
+    }
+
+    >div {
+      padding: 10px;
+      display: flex;
+    }
+
+    div:first-of-type {
+      width: 20%;
+      justify-content: flex-end;
+    }
+
+    div:last-of-type {
+      width: 80%;
+    }
+  }
+
+  .block {
+    display: block !important;
+  }
+  .schedule{
+    color: #D37E29;
+  }
+
+  p {
+    margin: 0;
+  }
+}
